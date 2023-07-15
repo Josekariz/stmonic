@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes } from "react-router-dom";
 
-import Home from './Home.js';
-import Blaze from './Blaze.js';
-import Events from './Events.js';
-import About from './About.js';
+import Home from "./Home.js";
+import Blaze from "./Blaze.js";
+import Events from "./Events.js";
+import About from "./About.js";
 
 const BaseRouter = () => {
   return (
