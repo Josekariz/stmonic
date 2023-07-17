@@ -1,40 +1,42 @@
-import React, { useState } from "react";
+import { useRef } from "react";
 import { Link } from "react-router-dom";
-import "./Navbar1.css";
+import { FaBars, FaTimes } from "react-icons/fa";
+import "./mainnav.css";
 
-const Navbar1 = () => {
-  const [isOpen, setIsOpen] = useState(false);
+function Navbar() {
+  const navRef = useRef();
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
+  const showNavbar = () => {
+    navRef.current.classList.toggle("responsive_nav");
   };
 
   return (
-    <nav className={`navbar ${isOpen ? "open" : ""}`}>
+    <header>
       <div className="logo">
         {/* <img src={"https://placehold.co/70"} alt="Logo" /> */}
       </div>
-      <ul className={`nav-links ${isOpen ? "open" : ""}`}>
-        <li>
+      <nav ref={navRef}>
+        <a href="/#">
           <Link to="/">Home</Link>
-        </li>
-        <li>
+        </a>
+        <a href="/#">
           <Link to="/blaze">Blaze</Link>
-        </li>
-        <li>
+        </a>
+        <a href="/#">
           <Link to="/events">Events</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-      </ul>
-      <div className="hamburger" onClick={toggleMenu}>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-      </div>
-    </nav>
+        </a>
+        <a href="/#">
+          <Link to="/about">About Us</Link>
+        </a>
+        <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+          <FaTimes />
+        </button>
+      </nav>
+      <button className="nav-btn" onClick={showNavbar}>
+        <FaBars />
+      </button>
+    </header>
   );
-};
+}
 
-export default Navbar1;
+export default Navbar;
