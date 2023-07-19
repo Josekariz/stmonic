@@ -1,0 +1,32 @@
+/* home.css */
+
+/* Video container to make it full-screen */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  /* Video to cover the container */
+  .video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Image to cover the container if video fails */
+  .video-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Rest of the content styling */
+  h1 {
+    margin-top: 100px; /* Adjust as needed */
+  }
+  
