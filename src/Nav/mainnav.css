@@ -12,6 +12,7 @@
 	--mainColorLight: #301934cb;
 	--secondaryColor: #0571ee;
 	--textColor: #eee;
+	--transparentMain: #301934e9;
 }
 
 header {
@@ -75,7 +76,7 @@ nav {
 		align-items: center;
 		justify-content: center;
 		gap: 1.5rem;
-		background-color: var(--mainColor);
+		background-color: var(--transparentMain);
 		transition: 1s;
 	}
 
