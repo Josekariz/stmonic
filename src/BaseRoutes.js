@@ -2,7 +2,7 @@ import React from "react";
 
 import { Route, Routes } from "react-router-dom";
 
-import Home from "./Home.js";
+import Home from "./homepage/Home.js";
 import Blaze from "./Blaze.js";
 import Events from "./Events.js";
 import About from "./About.js";
