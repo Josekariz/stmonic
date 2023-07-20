@@ -1,43 +1,26 @@
-import React, { useState } from "react";
+import React from "react";
 import Navbar1 from "../Nav/Navbar1";
-import hillsImage from "./hills.jpg";
-import vid from "./background vid.mp4";
+import SegmentationLine from "../SegmentationLine";
 import "./home.css"; // Import the home.css file
+import VideoBackground from "./VideoBackground.js"; // Import the VideoBackground component
 
 const Home = () => {
-  const [videoError, setVideoError] = useState(false);
-  const [imageError, setImageError] = useState(false);
-
-  const handleVideoError = () => {
-    setVideoError(true);
-  };
-
-  const handleImageError = () => {
-    setImageError(true);
-  };
-
   return (
-    <>
+    <div className="home-container">
       <Navbar1 />
+
       <div className="video-container">
-        {!videoError ? (
-          <video
-            src={vid}
-            autoPlay
-            muted
-            loop
-            onError={handleVideoError}
-          />
-        ) : (
-          <img
-            src={hillsImage}
-            alt=""
-            onError={handleImageError}
-          />
-        )}
+        <VideoBackground /> {/* Use the VideoBackground component */}
       </div>
-      <h1>Welcome to the Home Page</h1>
-    </>
+      <div className="content-container">
+        <SegmentationLine/>
+        <h1>The Church is the Best</h1>
+        {/* Add other content here */}
+        <h2>
+          lorem ipsum dolor sit amet, consect
+        </h2>
+      </div>
+    </div>
   );
 };
 
