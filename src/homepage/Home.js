@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar1 from "../Nav/Navbar1";
 import SegmentationLine from "../SegmentationLine";
+import ChurchGenInfo from "./ChurchGenInfo";
 import "./home.css"; // Import the home.css file
 import VideoBackground from "./VideoBackground.js"; // Import the VideoBackground component
 
@@ -14,11 +15,9 @@ const Home = () => {
       </div>
       <div className="content-container">
         <SegmentationLine/>
-        <h1>The Church is the Best</h1>
-        {/* Add other content here */}
-        <h2>
-          lorem ipsum dolor sit amet, consect
-        </h2>
+        <div className="church-gen-info">
+         <ChurchGenInfo/>
+        </div>
       </div>
     </div>
   );
