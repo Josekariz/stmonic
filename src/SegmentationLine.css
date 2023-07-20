@@ -1,0 +1,10 @@
+.segmentation-line {
+    background: linear-gradient(to right, rgb(82, 13, 255), rgb(13, 82, 255));
+    height: 3px;
+    margin: 0 auto;
+    width: 98%;
+    /* Adjust as needed to control the space below the line */
+    margin-bottom: 20px; /* You can change this value as needed */
+    border: none;
+  }
+  
