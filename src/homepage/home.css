@@ -19,6 +19,19 @@
   margin-top: 100vh;
   
 }
-.church-gen-info{
-  height: auto;
+
+
+/* embeded map */
+.location-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ccc; /* Add a border around the map */
+  padding: 10px; /* Add some padding for better spacing */
+}
+
+.map-iframe {
+  width: 600px;
+  height: 450px;
+  border: 0;
 }
