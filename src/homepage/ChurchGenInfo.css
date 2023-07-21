@@ -1,69 +1,70 @@
+/* ChurchGenInfo.css */
 .church-gen-info {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: #301934;
-    color: white;
-    padding: 20px;
-    font-size: 16px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #301934;
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.upper-text {
+  text-align: center;
+}
+
+.white-underline {
+  height: 2px;
+  width: 60px;
+  background-color: white;
+  margin: 8px auto;
+}
+
+.italic-text {
+  font-style: italic;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.schedule-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.day-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.day-container h3 {
+  text-transform: uppercase;
+}
+
+.day-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0; /* Add margin for spacing between day items */
+}
+
+.day-container li {
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+  .church-gen-info {
+    font-size: 14px;
+    padding: 10px; /* Reduce padding for better spacing */
   }
-  
-  .upper-text {
-    text-align: center;
-  }
-  
-  .white-underline {
-    height: 2px;
-    width: 60px;
-    background-color: white;
-    margin: 8px auto;
-  }
-  
-  .italic-text {
-    font-style: italic;
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
+
   .schedule-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 20px;
+    flex-direction: column; /* Display day containers in a column on small screens */
+    align-items: center; /* Center day containers horizontally */
   }
-  
+
   .day-container {
-    flex: 1 1 300px;
-    text-align: center;
-    margin-bottom: 20px;
+    width: 100%; /* Take full width of the schedule container on smaller screens */
   }
-  
-  .day-container h3 {
-    text-transform: uppercase;
-  }
-  
-  .day-container ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .day-container li {
-    text-align: center;
-  }
-  
-  /* Responsive Styles */
-  @media screen and (max-width: 600px) {
-    .church-gen-info {
-      font-size: 14px;
-    }
-  
-    .schedule-container {
-      flex-direction: column;
-    }
-  
-    .day-container {
-      max-width: 100%;
-    }
-  }
-  
+}
