@@ -2,6 +2,7 @@
     background: linear-gradient(to right, rgb(82, 13, 255), rgb(13, 82, 255));
     height: 3px;
     margin: 0 auto;
+    margin-top: 7%;
     width: 98%;
     /* Adjust as needed to control the space below the line */
     margin-bottom: 5%; /* You can change this value as needed */
