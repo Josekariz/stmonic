@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../Footer/Footer";
 import Navbar1 from "../Nav/Navbar1";
 import SegmentationLine from "../SegmentationLine";
 import ChurchGenInfo from "./ChurchGenInfo";
@@ -7,7 +8,7 @@ import VideoBackground from "./VideoBackground.js"; // Import the VideoBackgroun
 
 const Home = () => {
   return (
-    <div className="home-container">
+    <div className="home-container" id="home">
       <Navbar1 />
 
       <div className="video-container">
@@ -32,6 +33,11 @@ const Home = () => {
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
       </div>
+      <SegmentationLine/>
+
+      <Footer/>
+
+      
     </div>
   );
 };
