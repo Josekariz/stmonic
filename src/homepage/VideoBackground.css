@@ -1,9 +1,57 @@
 /* VideoBackground.css */
 
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
 
+.video-container {
+  position: relative;
+}
 
 .video-container video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Dark layer over the video */
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value (last parameter) to control the darkness */
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 3; /* Increase the z-index to appear above the video overlay */
+}
+
+.churchName {
+  font-size: 72px; /* Increase the font size for better readability */
+  color: white;
+  font-family: 'Old Standard TT', serif;
+  margin-bottom: 10%; /* Add spacing between church name and verse text */
+}
+
+.verse-text {
+  font-size: 24px; /* Increase the font size for better readability */
+  color: white;
+  font-family: 'Old Standard TT', serif;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .churchName {
+    font-size: 36px;
+    margin-bottom: 5px; /* Adjust spacing for smaller screens */
+  }
+
+  .verse-text {
+    font-size: 16px;
+  }
 }
