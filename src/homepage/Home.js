@@ -16,6 +16,9 @@ const Home = () => {
       </div>
       <div className="content-container">
         <SegmentationLine/>
+        <div className="intro-text">
+        <p>Order Of Service.</p>
+      </div>
         <div className="church-gen-info">
          <ChurchGenInfo/>
         </div>

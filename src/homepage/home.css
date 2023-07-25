@@ -1,3 +1,4 @@
+
 /* home.css */
 .home-container {
   position: relative;
@@ -16,7 +17,7 @@
 
 .content-container {
   /* Add some spacing between the video container and the content */
-  margin-top: 100vh;
+  margin-top: 10%;
   
 }
 
@@ -34,4 +35,11 @@
   width: 90%;
   height: 600px;
   border: 0;
+}
+.intro-text {
+  text-align: center;
+  color: aliceblue;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif; /* Applying the welcoming font */
+  font-size: 32px; /* Increased font size for better readability */
 }
