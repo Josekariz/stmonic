@@ -50,40 +50,47 @@
   justify-content: center;
   width: 85%;
   align-items: center;
-  background-color: #301934; /* Add the purple background color */
-  color: white; /* Set text color to white for better contrast */
-  border-radius: 10px; /* Add border-radius for rounded corners */
-
-  /* New styles for responsive layout */
-  flex-direction: column; /* Vertically arrange the items on smaller screens */
-
-  /* Larger screens */
-  @media (min-width: 768px) {
-    flex-direction: row; /* Horizontally arrange the items on larger screens */
-  }
+  background-color: #301934;
+  color: white;
+  border-radius: 10px;
 }
 
 .card-image {
   flex: 1;
-  width: 100%; /* Limit the width of the image */
-  max-width: 400px; /* Set maximum width for the image */
-
-  /* Larger screens */
-  @media (min-width: 768px) {
-    margin-right: 20px; /* Add space between the image and text on larger screens */
-    max-width: none; /* Remove maximum width on larger screens */
-  }
+  width: 100%;
+  max-width: 100%;
 }
 
 .card-image img {
   width: 100%;
-  height: auto; /* Ensure the image maintains its aspect ratio */
+  height: auto;
 }
 
 .card-content {
   flex: 1;
-  /* Larger screens */
-  @media (min-width: 768px) {
+}
+
+
+.simple-about {
+  flex-direction: column;
+  justify-content: space-around; /* Add space around the items */
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+  /* Horizontally arrange the items */
+  .simple-about {
+    flex-direction: row;
+    align-items: center; /* Vertically center the items */
+    justify-content: space-around; /* Add space around the items */
+  }
+
+  .card-image {
+    margin-right: 20px;
+    max-width: none;
+  }
+
+  .card-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,7 +98,6 @@
 }
 
 .purple-box {
-  /* No changes needed for the purple box */
   background-color: #301934;
   padding: 20px;
   border-radius: 10px;
