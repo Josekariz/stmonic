@@ -13,6 +13,7 @@ const Events = () => {
     <>
       <Navbar1 />
       <h1>Welcome to the Events Page</h1>
+      <p>Click on a date to see the events of that day.</p>
       <div className="calendar-container">
         {isLoading && <div className="loading-spinner"></div>}
         <iframe
