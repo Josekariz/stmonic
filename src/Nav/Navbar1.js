@@ -23,11 +23,12 @@ function Navbar() {
         <Link to="/events">Events</Link>
         </a>
         <a href="/#">
+        <Link to="/about">About Us</Link>
           
-          <Link to="/blaze">Blaze</Link>
         </a>
         <a href="/#">
-          <Link to="/about">About Us</Link>
+          
+          <Link to="/contactUs">ContactUs</Link>
         </a>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />

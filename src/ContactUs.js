@@ -1,15 +1,16 @@
 import React from "react";
 import Navbar1 from "./Nav/Navbar1";
 
-const Blaze = () => {
+
+const Contactus = () => {
 
 
   return (
     <>
       <Navbar1 />
-      <h1>Welcome to the Blaze Page</h1>
+      <h1>Welcome to the Contactus Page</h1>
     </>
   );
 };
 
-export default Blaze;
+export default Contactus;
