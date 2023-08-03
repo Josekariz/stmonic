@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar1 from "./Nav/Navbar1";
 import "./events.css"; // Import the events.css file
+import Footer from "./Footer/Footer";
 
 const Events = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -24,6 +25,7 @@ const Events = () => {
           loading="lazy" // Add loading="lazy" for better page loading performance
         ></iframe>
       </div>
+      <Footer/>
     </>
   );
 };
