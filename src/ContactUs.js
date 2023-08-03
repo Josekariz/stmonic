@@ -9,6 +9,8 @@ const Contactus = () => {
     <>
       <Navbar1 />
       <h1>Welcome to the Contactus Page</h1>
+
+      <p>these are our office hours</p>
     </>
   );
 };
