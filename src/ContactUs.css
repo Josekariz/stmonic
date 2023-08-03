@@ -1,0 +1,85 @@
+/* ContactUs.css */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f2f2f2; /* Light shade of white for the background */
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(120deg, #8e24aa, #3f51b5, #2196f3);
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%; /* 80% width on larger screens */
+  height: 65vh; /* 65vh height on larger screens */
+  animation: swayAnimation 8s infinite alternate ease-in-out; /* Add the swaying animation */
+  margin-top: 20px; /* Add some space between the contact card and the navbar */
+  margin-bottom: 20px; /* Add some space between the contact card and the footer */
+}
+
+@keyframes swayAnimation {
+  from {
+    transform: translateX(10px); /* Start the animation with a 10px translation to the right */
+  }
+  to {
+    transform: translateX(-10px); /* Move 10px to the left */
+  }
+}
+
+.contact-card h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contact-card p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.contact-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.icon {
+  font-size: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+  .contact-card {
+    width: 97%; /* 97% width on smaller screens */
+    height: 90vh; /* 90vh height on smaller screens */
+  }
+
+  .contact-card h2 {
+    font-size: 24px;
+  }
+
+  .contact-card p {
+    font-size: 16px;
+  }
+
+  .icon {
+    font-size: 30px;
+  }
+}
