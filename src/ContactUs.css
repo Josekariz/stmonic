@@ -23,7 +23,8 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 80%; /* 80% width on larger screens */
   height: 65vh; /* 65vh height on larger screens */
-  animation: swayAnimation 8s infinite alternate ease-in-out; /* Add the swaying animation */
+  /* animation: swayAnimation 8s infinite alternate ease-in-out;  */
+  /* Add the swaying animation */
   margin-top: 20px; /* Add some space between the contact card and the navbar */
   margin-bottom: 20px; /* Add some space between the contact card and the footer */
 }
