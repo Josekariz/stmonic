@@ -9,9 +9,12 @@
   margin: 0;
   /* Light shade of white for the background */
   background-color: #f2f2f2; 
+  
+  
 }
 
 .contact-card {
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,7 +28,7 @@
   width: 80%;
   height: 65vh;
   /* Add the swaying animation disabled it messes with the humburger menu dropdown */
-  /* animation: swayAnimation 8s infinite alternate ease-in-out;  */
+  animation: swayAnimation 8s infinite alternate ease-in-out; 
   margin-top: 20px;
   margin-bottom: 20px;
 }
