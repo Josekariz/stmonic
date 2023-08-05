@@ -1,8 +1,7 @@
-// AboutUs.js
 import React from "react";
 import Navbar from "../Nav/Navbar.jsx";
 import img from "../homepage/hills.jpg";
-import "./AboutUs.css"; // We'll create this CSS file in the next step
+import "./AboutUs.css";
 import Footer from "../Footer/Footer";
 
 const AboutUs = () => {
