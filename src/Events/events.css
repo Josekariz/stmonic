@@ -1,49 +1,61 @@
-/* events.css */
+/* Center the events container horizontally */
+.events-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+}
 
-/* Center the calendar container horizontally */
-.calendar-container {
-    max-width: 800px; /* Adjust the max-width based on your design */
-    margin: 0 auto;
-    padding: 10px; /* Add some padding for better appearance on mobile */
-  }
-  
-  /* Style the iframe to remove the border */
+/* Style the iframe to remove the border */
+.calendar-iframe {
+  border: none;
+  width: 100%;
+  height: 600px;
+}
+
+/* Responsive styles */
+@media only screen and (min-width: 768px) {
   .calendar-iframe {
-    border: none;
-    width: 100%;
-    height: 600px;
+    height: 800px; /* Larger height for tablets */
   }
-  
-  /* Responsive styles */
-  /* Adjust the max-width and height values based on your design preferences */
-  @media only screen and (min-width: 768px) {
-    .calendar-iframe {
-      height: 800px; /* Larger height for tablets */
-    }
+}
+
+@media only screen and (min-width: 1024px) {
+  .calendar-iframe {
+    max-width: 1000px; /* Larger width for desktops */
+    height: 1000px; /* Larger height for desktops */
   }
-  
-  @media only screen and (min-width: 1024px) {
-    .calendar-iframe {
-      max-width: 1000px; /* Larger width for desktops */
-      height: 1000px; /* Larger height for desktops */
-    }
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  border: 4px solid rgba(84, 0, 239, 0.3);
+  border-top: 4px solid #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+/* Friendly text color and emoji */
+h1 {
+  color: #fff;
+}
+
+p {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.emoji {
+  font-size: 2rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
-  .loading-spinner {
-    border: 4px solid rgba(84, 0, 239, 0.3);
-    border-top: 4px solid #fff;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    animation: spin 1s linear infinite;
-    margin: 20px auto;
+  100% {
+    transform: rotate(360deg);
   }
-  
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
+}
