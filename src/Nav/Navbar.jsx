@@ -16,17 +16,17 @@ function Navbar() {
         {/* <img src={"https://placehold.co/70"} alt="Logo" /> */}
       </div>
       <nav ref={navRef}>
-        <a href="/#">
+        <a href="/">
           <Link to="/">Home</Link>
         </a>
-        <a href="/#">
+        <a href="/events">
         <Link to="/events">Events</Link>
         </a>
-        <a href="/#">
+        <a href="/about">
         <Link to="/about">About Us</Link>
           
         </a>
-        <a href="/#">
+        <a href="/contactUs">
           
           <Link to="/contactUs">ContactUs</Link>
         </a>
