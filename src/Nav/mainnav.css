@@ -21,10 +21,11 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 80px; /* Adjust the height of the navbar */
-  padding: 0 2rem; /* Adjust padding for better spacing */
+  padding: 0 1rem; /* Adjust padding for better spacing */
   background-color: var(--mainColor);
   color: var(--textColor);
 }
+
 nav {
   z-index: 2;
   /* Add a z-index value to make the nav appear above other elements */
@@ -33,7 +34,6 @@ nav {
 .logo {
   height: 100px;
   width: 100px;
-  
   border-radius: 50px;
   overflow: hidden; /* Clip the image to fit within the logo container */
 }
@@ -42,6 +42,31 @@ nav {
   width: 100%; /* Make the image width 100% of the logo container */
   height: 100%; /* Make the image height 100% of the logo container */
   object-fit: cover; /* Scale the image to cover the entire container */
+}
+
+/* Add media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .logo {
+    height: 70px; /* Adjust the height for smaller screens */
+    width: 70px; /* Adjust the width for smaller screens */
+    border-radius: 35px;
+  }
+
+  header {
+    height: 60px; /* Adjust the height of the navbar on smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    height: 50px; /* Adjust the height for even smaller screens */
+    width: 50px; /* Adjust the width for even smaller screens */
+    border-radius: 25px;
+  }
+
+  header {
+    height: 40px; /* Adjust the height of the navbar on even smaller screens */
+  }
 }
 
 nav a {

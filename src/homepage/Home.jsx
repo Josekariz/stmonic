@@ -5,7 +5,7 @@ import SegmentationLine from "../Segmentation/SegmentationLine";
 
 import ChurchGenInfo from "./ChurchGenInfo";
 import "./home.css";
-import img from "./hills.jpg"
+import img from "./hills.jpg";
 import VideoBackground from "./VideoBackground.js";
 
 const Home = () => {
@@ -16,7 +16,7 @@ const Home = () => {
       <div className="video-container">
         <VideoBackground />
       </div>
-      <SegmentationLine/>
+      <SegmentationLine />
       <div className="simple-about">
         <div className="card-container">
           <div className="card-image">
@@ -45,6 +45,12 @@ const Home = () => {
           <ChurchGenInfo />
         </div>
         <SegmentationLine />
+      </div>
+      <div className="location-container">
+        <p className="welcoming-text">We are located here</p>
+        <span role="img" aria-label="Location Pin" className="location-pin">
+          📍
+        </span>
       </div>
       <div className="location-info">
         <iframe
