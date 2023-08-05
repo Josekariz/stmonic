@@ -5,13 +5,13 @@
 }
 
 .video-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
+  
+  
+  
+  
+  
   z-index: -1;
-  overflow: hidden;
+  
 }
 
 
@@ -22,6 +22,7 @@
 }
 
 
+/* Map styling */
 /* embeded map */
 .location-info {
   display: flex;
@@ -30,12 +31,56 @@
   border: 2px solid #ccc; /* Add a border around the map */
   padding: 10px; /* Add some padding for better spacing */
 }
-
 .map-iframe {
   width: 90%;
   height: 600px;
   border: 0;
 }
+
+/* Responsive adjustments */
+@media screen and (max-width: 1200px) {
+  .map-iframe {
+    height: 400px; /* Reduce height for medium-sized screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .map-iframe {
+    width: 100%; /* Make it full width on smaller screens */
+    height: 300px; /* Adjust height for smaller screens */
+  }
+}
+
+/* Additional styles for better spacing and aesthetics */
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Add some top margin for spacing */
+  padding: 20px; /* Add padding to create a visual frame around the map */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  border-radius: 10px; /* Add rounded corners for a modern look */
+  background-color: #f9f9f9; /* Add a light background color to make the map stand out */
+}
+
+/* Style the iframe container to have a fixed aspect ratio */
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio (height/width) */
+  overflow: hidden;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
 .intro-text {
   text-align: center;
   color: aliceblue;
