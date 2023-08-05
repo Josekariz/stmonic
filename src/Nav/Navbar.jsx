@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./mainnav.css";
+import churchLogo from "../Assets/churchlogo2023.png";
 
 function Navbar() {
   const navRef = useRef();
@@ -13,7 +14,7 @@ function Navbar() {
   return (
     <header className="fixed-nav">
       <div className="logo">
-        {/* <img src={"https://placehold.co/70"} alt="Logo" /> */}
+        <img src={churchLogo} alt="Logo" />
       </div>
       <nav ref={navRef}>
         <a href="/">
