@@ -13,13 +13,17 @@ const Footer = () => {
   return (
     <footer className="footer-container">
       <div className="footer-icons">
-        <a href="https://www.facebook.com/">
+        <a href="https://web.facebook.com/ackstmonicautawala">
           <FaFacebook />
         </a>
-        <a href="mailto:example@gmail.com">
+        <a href="ackstmonicautawala@gmail.com">
           <FaEnvelope />
         </a>
-        <a target="_blank" rel="noreferrer" href="https://www.youtube.com/">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.youtube.com/c/ACKSTMONICAPARISHUTAWALA"
+        >
           <FaYoutube />
         </a>
         <a
@@ -32,7 +36,6 @@ const Footer = () => {
       </div>
       <div className="footer-links">
         <Link to="/">Home</Link>
-        <Link to="/blaze">Blaze</Link>
         <Link to="/events">Events</Link>
         <Link to="/about">About</Link>
       </div>

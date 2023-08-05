@@ -7,14 +7,9 @@
   align-items: center;
   height: 100vh;
   margin: 0;
-  
-  
-  
-  
 }
 
 .contact-card {
-  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,7 +23,7 @@
   width: 80%;
   height: 65vh;
   /* Add the swaying animation disabled it messes with the humburger menu dropdown */
-  animation: swayAnimation 8s infinite alternate ease-in-out; 
+  animation: swayAnimation 8s infinite alternate ease-in-out;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -59,19 +54,40 @@
 
 .contact-icons {
   display: flex;
+  flex-wrap: wrap; /* Allow icons to wrap to the next line */
+  justify-content: center; /* Center the icons horizontally */
   gap: 20px;
+  margin-top: 20px;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .icon {
   font-size: 40px;
   cursor: pointer;
+  color: white;
   transition: transform 0.3s ease-in-out;
 }
 
 .icon:hover {
   transform: scale(1.2);
+  color: #bb61d4e4;
 }
 
+/* Add styles for the text descriptions */
+.icon-label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: white;
+  margin-top: 10px; /* Add some spacing between icon and text */
+}
+
+/* Additional media query for smaller screens */
 @media screen and (max-width: 768px) {
   .contact-card {
     width: 90%;

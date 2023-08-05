@@ -2,7 +2,7 @@ import React from "react";
 import {
   FaFacebook,
   FaInstagram,
-  FaPhone,
+  // FaPhone,
   FaEnvelope,
   FaYoutube,
   FaPhoneAlt,
@@ -20,36 +20,60 @@ const ContactUs = () => {
           <h2>Contact Us</h2>
           <p>We are open every day from Monday to Sunday, from 8 AM to 5 PM.</p>
           <div className="contact-icons">
-            <a
-              href="https://www.facebook.com/yourfacebookpage"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaFacebook className="icon" />
-            </a>
-            <a
-              href="https://www.instagram.com/yourinstagram"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaInstagram className="icon" />
-            </a>
-            <a href="tel:+1234567890">
-              <FaPhone className="icon" />
-            </a>
-            <a href="mailto:info@example.com">
-              <FaEnvelope className="icon" />
-            </a>
-            <a
-              href="https://www.youtube.com/youryoutubechannel"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaYoutube className="icon" />
-            </a>
-            <a href="tel:+0987654321">
-              <FaPhoneAlt className="icon" />
-            </a>
+            {/* Phone */}
+            <div className="icon-container">
+              <a href="tel:+2540101079451">
+                <FaPhoneAlt className="icon" />
+              </a>
+              <span className="icon-label">Phone</span>
+            </div>
+
+            {/* Gmail */}
+            <div className="icon-container">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://mail.google.com/mail/?view=cm&to=sejokariz@gmail.com"
+              >
+                <FaEnvelope className="icon" />
+              </a>
+              <span className="icon-label">Email</span>
+            </div>
+
+            {/* Facebook */}
+            <div className="icon-container">
+              <a
+                href="https://web.facebook.com/ackstmonicautawala"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaFacebook className="icon" />
+              </a>
+              <span className="icon-label">Facebook</span>
+            </div>
+            {/* Instagram */}
+            <div className="icon-container">
+              <a
+                href="https://instagram.com/ackst.monicautawala?igshid=MzRlODBiNWFlZA=="
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram className="icon" />
+              </a>
+              <span className="icon-label">Instagram</span>
+            </div>
+
+            {/* Youtube */}
+            <div className="icon-container">
+              <a
+                href="https://www.youtube.com/c/ACKSTMONICAPARISHUTAWALA"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaYoutube className="icon" />
+              </a>
+              <span className="icon-label">YouTube</span>
+            </div>
           </div>
         </div>
       </div>
