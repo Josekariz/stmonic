@@ -1,98 +1,108 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
 
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	font-family: "Titillium Web", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
 }
+
 /* control color of the page */
 :root {
-	--mainColor: #301934;
-	--mainColorLight: #301934cb;
-	--secondaryColor: #0571ee;
-	--textColor: #eee;
-	--transparentMain: #301934e9;
+  --mainColor: #301934;
+  --mainColorLight: #301934cb;
+  --secondaryColor: #0571ee;
+  --textColor: #eee;
+  --transparentMain: #301934e9;
 }
 
 header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	height: 80px;
-	padding: 0 2rem;
-	background-color: var(--mainColor);
-	color: var(--textColor);
-	z-index: 13;
-
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px; /* Adjust the height of the navbar */
+  padding: 0 2rem; /* Adjust padding for better spacing */
+  background-color: var(--mainColor);
+  color: var(--textColor);
 }
-.logo {
-    height: 70px;
-    width: 70px;
-    background-color: purple;
-    border-radius: 35px;
-  }
+nav {
+  z-index: 2;
+  /* Add a z-index value to make the nav appear above other elements */
+}
 
+.logo {
+	height: 50px;
+	width: 50px;
+	background-color: purple;
+	border-radius: 25px;
+	overflow: hidden; /* Clip the image to fit within the logo container */
+  }
+  
+  .logo-image {
+	width: 100%; /* Make the image width 100% of the logo container */
+	height: 100%; /* Make the image height 100% of the logo container */
+	object-fit: cover; /* Scale the image to cover the entire container */
+  }
 nav a {
-	margin: 0 1rem;
-	color: var(--textColor);
-	text-decoration: none;
+  margin: 0 1rem; /* Adjust margin for better spacing */
+  color: var(--textColor);
+  text-decoration: none;
 }
 
 nav a:hover {
-	color: var(--secondaryColor);
+  color: var(--secondaryColor);
 }
 
 header .nav-btn {
-	padding: 5px;
-	cursor: pointer;
-	background: transparent;
-	border: none;
-	outline: none;
-	color: var(--textColor);
-	visibility: hidden;
-	opacity: 0;
-	font-size: 1.8rem;
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--textColor);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.5rem; /* Adjust font size for the buttons */
 }
 
 header div,
 nav {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 @media only screen and (max-width: 1024px) {
-	header .nav-btn {
-		visibility: visible;
-		opacity: 1;
-	}
+  header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
 
-	header nav {
-		position: fixed;
-		top: -100vh;
-		left: 0;
-		height: 100%;
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		gap: 1.5rem;
-		background-color: var(--transparentMain);
-		transition: 1s;
-	}
+  header nav {
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--transparentMain);
+    transition: 1s;
+  }
 
-	header .responsive_nav {
-		transform: translateY(100vh);
-	}
+  header .responsive_nav {
+    transform: translateY(100vh);
+  }
 
-	nav .nav-close-btn {
-		position: absolute;
-		top: 2rem;
-		right: 2rem;
-	}
+  nav .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
 
-	nav a {
-		font-size: 1.5rem;
-	}
+  nav a {
+    font-size: 1.5rem;
+  }
 }
