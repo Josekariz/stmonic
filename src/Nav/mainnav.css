@@ -44,7 +44,30 @@ nav {
   object-fit: cover; /* Scale the image to cover the entire container */
 }
 
+/* Add media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .logo {
+    height: 70px; /* Adjust the height for smaller screens */
+    width: 70px; /* Adjust the width for smaller screens */
+    border-radius: 35px;
+  }
 
+  header {
+    height:70px; /* Adjust the height of the navbar on smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    height: 50px; /* Adjust the height for even smaller screens */
+    width: 50px; /* Adjust the width for even smaller screens */
+    border-radius: 25px;
+  }
+
+  header {
+    height: 50px; /* Adjust the height of the navbar on even smaller screens */
+  }
+}
 
 nav a {
   margin: 0 1rem; /* Adjust margin for better spacing */
