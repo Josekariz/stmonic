@@ -1,14 +1,14 @@
 // AboutUs.js
 import React from "react";
-import Navbar1 from "./Nav/Navbar1";
-import img from "./homepage/hills.jpg";
+import Navbar from "../Nav/Navbar.jsx";
+import img from "../homepage/hills.jpg";
 import "./AboutUs.css"; // We'll create this CSS file in the next step
-import Footer from "./Footer/Footer";
+import Footer from "../Footer/Footer";
 
 const AboutUs = () => {
   return (
     <>
-      <Navbar1 />
+      <Navbar />
       <div className="about-us">
         <div className="about-us-content">
           <div className="about-us-text">

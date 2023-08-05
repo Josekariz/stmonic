@@ -2,8 +2,8 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaPhone, FaEnvelope, FaYoutube, FaPhoneAlt } from "react-icons/fa";
 import "./ContactUs.css";
-import Navbar from "./Nav/Navbar1";
-import Footer from "./Footer/Footer";
+import Navbar from "../Nav/Navbar.jsx";
+import Footer from "../Footer/Footer";
 
 const ContactUs = () => {
   return (

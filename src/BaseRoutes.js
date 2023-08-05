@@ -1,9 +1,9 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom"
-import Home from "./homepage/Home.js";
-import Events from "./Events.js";
-import About from "./About.js";
-import Contactus from "./ContactUs.js";
+import Home from "./homepage/Home.jsx";
+import Events from "./Events/Events.jsx";
+import About from "./About/About.jsx";
+import Contactus from "./contactus/ContactUs.jsx";
 
 const BaseRouter = () => {
   return (

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Navbar1 from "./Nav/Navbar1";
+import Navbar from "../Nav/Navbar.jsx";
 import "./events.css"; // Import the events.css file
-import Footer from "./Footer/Footer";
+import Footer from "../Footer/Footer";
 
 const Events = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -12,7 +12,7 @@ const Events = () => {
 
   return (
     <>
-      <Navbar1 />
+      <Navbar />
       <h1>Welcome to the Events Page</h1>
       <p>Click on a date to see the events of that day.</p>
       <div className="calendar-container">

@@ -1,7 +1,8 @@
 import React from "react";
 import Footer from "../Footer/Footer";
-import Navbar1 from "../Nav/Navbar1";
-import SegmentationLine from "../SegmentationLine";
+import Navbar1 from "../Nav/Navbar.jsx";
+import SegmentationLine from "../Segmentation/SegmentationLine";
+
 import ChurchGenInfo from "./ChurchGenInfo";
 import "./home.css";
 import img from "./hills.jpg"
