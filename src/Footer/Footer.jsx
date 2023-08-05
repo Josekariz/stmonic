@@ -16,9 +16,14 @@ const Footer = () => {
         <a href="https://web.facebook.com/ackstmonicautawala">
           <FaFacebook />
         </a>
-        <a href="ackstmonicautawala@gmail.com">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://mail.google.com/mail/?view=cm&to=ackstmonicautawala@gmail.com"
+        >
           <FaEnvelope />
         </a>
+
         <a
           target="_blank"
           rel="noreferrer"
