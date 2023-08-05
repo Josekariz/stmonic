@@ -1,8 +1,4 @@
-/* ChurchGenInfo.css */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
-
 
 .church-gen-info {
   width: 90%;
@@ -11,8 +7,8 @@
   background-color: #301934;
   color: white;
   padding: 20px;
-  font-family: 'Poppins', sans-serif; /* Applying the welcoming font */
-  font-size: 20px; /* Increased font size for better readability */
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
 }
 
 .upper-text {
@@ -51,7 +47,7 @@
 .day-container ul {
   list-style: none;
   padding: 0;
-  margin: 10px 0; /* Add margin for spacing between day items */
+  margin: 10px 0;
 }
 
 .day-container li {
@@ -59,14 +55,17 @@
 }
 
 /* Responsive Styles */
-@media screen and (max-width: 600px) {
-  .intro-text {
-    font-size: 16px; /* Adjust the font size for smaller screens */
-  }
-
+@media screen and (max-width: 1200px) {
   .church-gen-info {
-    font-size: 18px; /* Adjust the font size for smaller screens */
-    padding: 10px; /* Reduce padding for better spacing */
+    font-size: 18px;
+    padding: 15px; /* Reduce padding for better spacing */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .church-gen-info {
+    font-size: 16px; /* Adjust the font size for smaller screens */
+    padding: 10px; /* Further reduce padding for better spacing on smaller screens */
   }
 
   .schedule-container {
@@ -76,5 +75,12 @@
 
   .day-container {
     width: 100%; /* Take full width of the schedule container on smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .church-gen-info {
+    font-size: 14px; /* Adjust the font size for even smaller screens */
+    padding: 5px; /* Further reduce padding for better spacing on very small screens */
   }
 }
