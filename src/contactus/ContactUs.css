@@ -1,5 +1,5 @@
 /* ContactUs.css */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 
 .contact-container {
   display: flex;
@@ -7,7 +7,8 @@
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #f2f2f2; /* Light shade of white for the background */
+  /* Light shade of white for the background */
+  background-color: #f2f2f2; 
 }
 
 .contact-card {
@@ -21,20 +22,22 @@
   color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 80%; /* 80% width on larger screens */
-  height: 65vh; /* 65vh height on larger screens */
+  width: 80%;
+  height: 65vh;
+  /* Add the swaying animation disabled it messes with the humburger menu dropdown */
   /* animation: swayAnimation 8s infinite alternate ease-in-out;  */
-  /* Add the swaying animation */
-  margin-top: 20px; /* Add some space between the contact card and the navbar */
-  margin-bottom: 20px; /* Add some space between the contact card and the footer */
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 @keyframes swayAnimation {
   from {
-    transform: translateX(10px); /* Start the animation with a 10px translation to the right */
+    /* Start the animation with a 10px translation to the right */
+    transform: translateX(10px);
   }
   to {
-    transform: translateX(-10px); /* Move 10px to the left */
+    /* Move 10px to the left */
+    transform: translateX(-10px);
   }
 }
 
@@ -42,11 +45,11 @@
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 15px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .contact-card p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   margin-bottom: 20px;
 }
@@ -68,8 +71,8 @@
 
 @media screen and (max-width: 768px) {
   .contact-card {
-    width: 97%; /* 97% width on smaller screens */
-    height: 90vh; /* 90vh height on smaller screens */
+    width: 90%;
+    height: 90vh;
   }
 
   .contact-card h2 {

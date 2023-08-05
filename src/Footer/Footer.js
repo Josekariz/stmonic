@@ -1,7 +1,13 @@
 import React from "react";
-import { FaFacebook, FaEnvelope, FaYoutube, FaInstagram, FaPhoneAlt } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaEnvelope,
+  FaYoutube,
+  FaInstagram,
+  FaPhoneAlt,
+} from "react-icons/fa";
 import { Link } from "react-router-dom";
-import "./Footer.css"; // Create a separate CSS file for your styles if you haven't already.
+import "./Footer.css";
 
 const Footer = () => {
   return (
@@ -16,7 +22,11 @@ const Footer = () => {
         <a target="_blank" rel="noreferrer" href="https://www.youtube.com/">
           <FaYoutube />
         </a>
-        <a target="_blank" rel="noreferrer" href="https://instagram.com/ackst.monicautawala?igshid=MzRlODBiNWFlZA==">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://instagram.com/ackst.monicautawala?igshid=MzRlODBiNWFlZA=="
+        >
           <FaInstagram />
         </a>
       </div>
