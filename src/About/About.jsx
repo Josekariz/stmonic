@@ -90,9 +90,7 @@ const AboutUs = () => {
           <div className="about-us-text">
             <h2>Mothers Union. </h2>
             <p>
-              Phasellus eu sagittis purus. Aliquam a nisi velit. Integer eu
-              dolor metus. Ut lacinia ipsum nec justo ultricies, eget facilisis
-              sapien luctus.
+              Here add description about the mothers union.
             </p>
           </div>
           <div className="about-us-image">
