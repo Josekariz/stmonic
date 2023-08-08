@@ -6,7 +6,7 @@ import SegmentationLine from "../Segmentation/SegmentationLine";
 import ChurchGenInfo from "./ChurchGenInfo";
 import "./home.css";
 import img from "./hills.jpg";
-import VideoBackground from "./VideoBackground.js";
+import VideoBackground from "./VideoBackground.jsx";
 
 const Home = () => {
   return (
