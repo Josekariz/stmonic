@@ -20,7 +20,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 80px; /* Adjust the height of the navbar */
+  height: 100px; /* Adjust the height of the navbar */
   padding: 0 2rem; /* Adjust padding for better spacing */
   background-color: var(--mainColor);
   color: var(--textColor);
@@ -53,7 +53,7 @@ nav {
   }
 
   header {
-    height: 50px; /* Adjust the height of the navbar on smaller screens */
+    height: 70px; /* Adjust the height of the navbar on smaller screens */
   }
 }
 
