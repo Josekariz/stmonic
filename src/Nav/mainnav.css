@@ -56,6 +56,7 @@ nav {
 
   header {
     height: 70px; /* Adjust the height of the navbar on smaller screens */
+    padding: 0 1rem;
   }
 }
 
@@ -87,6 +88,8 @@ nav {
   align-items: center;
 }
 
+
+/*Dropdown humburger menu*/
 @media only screen and (max-width: 1024px) {
   header .nav-btn {
     visibility: visible;
