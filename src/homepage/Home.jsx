@@ -7,6 +7,7 @@ import ChurchGenInfo from "./ChurchGenInfo";
 import "./home.css";
 import img from "./hills.jpg";
 import VideoBackground from "./VideoBackground.jsx";
+import TestimonialSlider from "./Testimonials";
 
 const Home = () => {
   return (
@@ -45,13 +46,20 @@ const Home = () => {
           <ChurchGenInfo />
         </div>
         <SegmentationLine />
+
       </div>
+      {/* testimonial slider */}
+      <div>
+        <TestimonialSlider/>
+      </div>
+      <SegmentationLine/>
       <div className="location-container">
         <p className="welcoming-text">We are located here</p>
         <span role="img" aria-label="Location Pin" className="location-pin">
           📍
         </span>
       </div>
+      
       <div className="location-info">
         <iframe
           className="map-iframe"
