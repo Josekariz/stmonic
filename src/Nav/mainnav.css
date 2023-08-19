@@ -9,11 +9,11 @@
 
 /* control color of the page */
 :root {
-  --mainColor: #301934;
-  --mainColorLight: #301934cb;
-  --secondaryColor: #0571ee;
+  --mainColor: #5d5dff;
+  --mainColorLight: #7272fc99;
+  --secondaryColor: #301934;
   --textColor: #eee;
-  --transparentMain: #301934e9;
+  --transparentMain: #7272fc97;
 }
 
 header {
