@@ -4,7 +4,12 @@ import img from "../homepage/hills.jpg";
 import "./AboutUs.css";
 import Footer from "../Footer/Footer";
 
+
 const AboutUs = () => {
+
+  function moveToPage(){
+
+  }
   return (
     <>
       <Navbar />
@@ -99,10 +104,8 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="centered-text">
-        <p style={{ fontFamily: "Roboto, sans-serif", fontSize: "24px" }}>
-          All are welcome and loved here 😊
-        </p>
-      </div>
+      <p className="centered-text-content">All are welcome and loved here 😊</p>
+    </div>
       <Footer />
     </>
   );

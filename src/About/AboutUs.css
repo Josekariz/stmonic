@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1rem;
 }
 
 .about-us-content-1,
@@ -10,10 +11,13 @@
   justify-content: space-between;
   align-items: center;
   margin: 20px 0;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fcfbffc2;
 }
 
 .about-us-content-2 {
-  flex-direction: row-reverse; /* Image on the right, text on the left */
+  flex-direction: row-reverse;
 }
 
 .about-us-content-1 .about-us-text,
@@ -29,14 +33,22 @@
 .about-us-content-2 .about-us-image {
   flex: 1;
   padding: 0 20px;
-  max-width: 100%; /* Set the image width to 100% of its container */
-  height: auto; /* Ensure the image scales proportionally */
+  max-width: 100%;
+  height: auto;
 }
 
 .about-us-image img {
-  max-width: 100%; /* Limit the maximum width of the images */
-  height: auto; /* Ensure the image scales proportionally */
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
+
+.about-us-image img:hover {
+  transform: scale(1.05); /* Slightly increase the size on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover */
+}
+
+
 
 .about-us-text h2,
 .about-us-text p {
@@ -52,13 +64,39 @@
 
   .about-us-text h2,
   .about-us-text p {
-    order: 0; /* Reset the order for smaller screens */
+    order: 0;
     padding: 10px 0;
   }
 
   .about-us-content-1 .about-us-image,
   .about-us-content-2 .about-us-image {
-    order: 1; /* Image comes second */
-    padding-top: 10px; /* Add some spacing between h2 and image */
+    order: 1;
+    padding-top: 10px;
   }
+}
+
+.about-us-text > p{
+  color: black;
+  font-size: large;
+  font-weight: 200;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold
+
+}
+.about-us-text > h2{
+  color: #0080ff;
+  text-decoration: underline;
+  ;
+}
+.about-us-text h2:hover {
+  color: #003de6;
+  font-size: 1.6rem; /* Increase font size on hover */
+}
+
+.centered-text > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:deepskyblue
+  
 }
