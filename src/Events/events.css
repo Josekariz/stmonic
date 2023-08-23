@@ -1,21 +1,23 @@
 /* Center the events container horizontally */
 .events-container {
-  max-width: 800px;
+  width: 95%;
   margin: 0 auto;
-  padding: 10px;
+  padding: 20px 0; /* Add some vertical padding for spacing */
+  text-align: center; /* Center align the content */
 }
 
 /* Style the iframe to remove the border */
 .calendar-iframe {
   border: none;
   width: 100%;
-  height: 600px;
+  min-height: 500px;
 }
 
 /* Responsive styles */
 @media only screen and (min-width: 768px) {
   .calendar-iframe {
     height: 800px; /* Larger height for tablets */
+    
   }
 }
 
@@ -37,15 +39,57 @@
   margin: 20px auto;
 }
 
-/* Friendly text color and emoji */
 h1 {
   color: #fff;
+  text-shadow: 2px 2px 4px rgba(112, 103, 103, 0.521);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  transition: font-size 0.5s, cursor 0.3s;
 }
 
 p {
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  transition: color 0.5s, cursor 0.1s;
 }
+
+/* Styles for h1 and p on hover */
+h1:hover {
+  font-size: 2.2rem;
+  color: #3a1b3f;
+  cursor: pointer;
+}
+
+p:hover {
+  font-size: 1.3rem;
+  color: #3a1b3fc5;
+  cursor: help;
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+
+  /* Responsive hover styles */
+  h1:hover {
+    font-size: 1.2rem;
+  }
+
+  p:hover {
+    font-size: 1.1rem;
+    color: #3a1b3f;
+  }
+}
+
 
 .emoji {
   font-size: 2rem;
