@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./mainnav.css";
@@ -6,9 +6,10 @@ import churchLogo from "../Assets/churchlogo2023.png";
 
 function Navbar() {
   const navRef = useRef();
+  const [navOpen, setNavOpen] = useState(false);
 
   const showNavbar = () => {
-    navRef.current.classList.toggle("responsive_nav");
+    setNavOpen(!navOpen);
   };
 
   return (
@@ -16,21 +17,19 @@ function Navbar() {
       <div className="logo">
         <img src={churchLogo} alt="Logo" />
       </div>
-      <nav ref={navRef}>
-        <a href="/">
+      <nav ref={navRef} className={navOpen ? "responsive_nav" : ""}>
+        <div>
           <Link to="/">Home</Link>
-        </a>
-        <a href="/events">
-        <Link to="/events">Events</Link>
-        </a>
-        <a href="/about">
-        <Link to="/about">About Us</Link>
-          
-        </a>
-        <a href="/contactUs">
-          
+        </div>
+        <div>
+          <Link to="/events">Events</Link>
+        </div>
+        <div>
+          <Link to="/about">About Us</Link>
+        </div>
+        <div>
           <Link to="/contactUs">ContactUs</Link>
-        </a>
+        </div>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />
         </button>

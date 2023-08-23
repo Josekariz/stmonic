@@ -66,8 +66,9 @@ nav a {
   text-decoration: none;
 }
 
-nav a:hover {
+nav :hover {
   color: var(--secondaryColor);
+  font-size: 22px;
 }
 
 header .nav-btn {

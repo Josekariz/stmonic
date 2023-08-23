@@ -1,12 +1,12 @@
 import React from "react";
 import Footer from "../Footer/Footer";
-import Navbar1 from "../Nav/Navbar.jsx";
+import Navbar1 from "../Nav/Navbar";
 import SegmentationLine from "../Segmentation/SegmentationLine";
 
 import ChurchGenInfo from "./ChurchGenInfo";
 import "./home.css";
 import img from "./hills.jpg";
-import VideoBackground from "./VideoBackground.jsx";
+import VideoBackground from "./VideoBackground";
 import TestimonialSlider from "./Testimonials";
 
 const Home = () => {
@@ -14,10 +14,15 @@ const Home = () => {
     <div className="home-container" id="home">
       <Navbar1 />
 
+      {/* BAKCGROUND VIDEO */}
+
       <div className="video-container">
         <VideoBackground />
       </div>
       <SegmentationLine />
+
+      {/* SIMPLE ABOUT SECTION  */}
+
       <div className="simple-about">
         <div className="card-container">
           <div className="card-image">
@@ -35,31 +40,32 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/* End of Card component */}
+      <SegmentationLine />
 
+      {/* ORDER OF SERVICE SECTION */}
       <div className="content-container">
-        <SegmentationLine />
         <div className="intro-text">
           <p>Order Of Service.</p>
         </div>
         <div className="church-gen-info">
           <ChurchGenInfo />
         </div>
-        <SegmentationLine />
-
       </div>
+      <SegmentationLine />
+
+
       {/* testimonial slider */}
       <div>
-        <TestimonialSlider/>
+        <TestimonialSlider />
       </div>
-      <SegmentationLine/>
+      <SegmentationLine />
       <div className="location-container">
-        <p className="welcoming-text">We are located here</p>
+        <p className="location-text">We are located here</p>
         <span role="img" aria-label="Location Pin" className="location-pin">
           📍
         </span>
       </div>
-      
+
       <div className="location-info">
         <iframe
           className="map-iframe"
@@ -69,10 +75,12 @@ const Home = () => {
           title="Church Location"
           allowFullScreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
       <SegmentationLine />
+
+      {/* FOOTER */}
 
       <Footer />
     </div>
