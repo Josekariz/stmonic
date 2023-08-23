@@ -39,7 +39,7 @@
   margin: 20px auto;
 }
 
-h1 {
+.welcome-text {
   color: #fff;
   text-shadow: 2px 2px 4px rgba(112, 103, 103, 0.521);
   font-size: 1.5rem;
@@ -55,13 +55,13 @@ p {
 }
 
 /* Styles for h1 and p on hover */
-h1:hover {
+.welcome-text:hover {
   font-size: 2.2rem;
   color: #3a1b3f;
   cursor: pointer;
 }
 
-p:hover {
+.click-text:hover {
   font-size: 1.3rem;
   color: #3a1b3fc5;
   cursor: help;
@@ -69,31 +69,27 @@ p:hover {
 
 /* Media query for responsive design */
 @media screen and (max-width: 768px) {
-  h1 {
+  .welcome-text {
     font-size: 1.2rem;
     margin-bottom: 8px;
   }
 
-  p {
+  .click-text {
     font-size: 1rem;
     margin-bottom: 15px;
   }
 
   /* Responsive hover styles */
-  h1:hover {
+  .welcome-text:hover {
     font-size: 1.2rem;
   }
 
-  p:hover {
+  .click-text:hover {
     font-size: 1.1rem;
     color: #3a1b3f;
   }
 }
 
-
-.emoji {
-  font-size: 2rem;
-}
 
 @keyframes spin {
   0% {

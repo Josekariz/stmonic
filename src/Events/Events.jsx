@@ -14,8 +14,8 @@ const Events = () => {
     <>
       <Navbar />
       <div className="events-container">
-        <h1>Welcome to Events Page</h1>
-        <p>Click a date to see the events.</p>
+        <h1 className="welcome-text">Welcome to Events Page</h1>
+        <p className="click-text">Click a date to see the events.</p>
         <div className="calendar-container">
           {isLoading && <div className="loading-spinner"></div>}
           <iframe
