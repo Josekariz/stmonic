@@ -3,12 +3,22 @@ import Navbar from "../Nav/Navbar.jsx";
 import img from "../homepage/hills.jpg";
 import "./AboutUs.css";
 import Footer from "../Footer/Footer";
+import { useNavigate } from 'react-router-dom';
+
 
 
 const AboutUs = () => {
 
-  function moveToPage(){
+  // Pseudocode
 
+  // create a function such that when either the text h2 or image is clicked it navigates to the respective path
+
+  // the function called when clicked should be anonymous or sth like this  ()=>{moveToPage(mothersunion)}
+  const navigate = useNavigate();
+
+
+  function moveToPage(path){
+    navigate(`${path}`);
   }
   return (
     <>
