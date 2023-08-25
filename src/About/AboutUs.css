@@ -101,5 +101,38 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: large;
+  font-family: 'DM Serif Display', serif;
   color: deepskyblue;
+  animation: colorChange 8s infinite alternate, text3D 2s infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    color: deepskyblue;
+  }
+  25% {
+    color: purple;
+  }
+  50% {
+    color: pink;
+  }
+  75% {
+    color: rgb(255, 123, 0);
+  }
+  100% {
+    color: deepskyblue;
+  }
+}
+
+@keyframes text3D {
+  0% {
+    transform: translateZ(0);
+  }
+  50% {
+    transform: translateZ(10px);
+  }
+  100% {
+    transform: translateZ(0);
+  }
 }
