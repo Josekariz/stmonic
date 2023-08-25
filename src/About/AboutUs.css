@@ -11,9 +11,9 @@
   justify-content: space-between;
   align-items: center;
   margin: 20px 0;
-  border-radius: 5px;
+  border-radius: 2.5px;
   padding: 10px;
-  background-color: #fcfbffc2;
+  background-color: #faf5f9b6;
 }
 
 .about-us-content-2 {
@@ -32,7 +32,7 @@
 .about-us-content-1 .about-us-image,
 .about-us-content-2 .about-us-image {
   flex: 1;
-  padding: 0 20px;
+  padding: 0 5px;
   max-width: 100%;
   height: auto;
 }
