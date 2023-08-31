@@ -8,6 +8,7 @@ import "./home.css";
 import img from "./hills.jpg";
 import VideoBackground from "./VideoBackground";
 import TestimonialSlider from "./Testimonials";
+import TawkToChat from "../TawkToChat";
 
 const Home = () => {
   return (
@@ -79,6 +80,9 @@ const Home = () => {
         ></iframe>
       </div>
       <SegmentationLine />
+
+      {/* tak to chat asssistant */}
+      <TawkToChat/>
 
       {/* FOOTER */}
 
