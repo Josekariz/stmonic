@@ -136,3 +136,7 @@
     transform: translateZ(0);
   }
 }
+.blue-ellipsis {
+  color: rgb(0, 174, 255);
+  
+}
